@@ -14,3 +14,4 @@ python_version = "3.9"
 
 [scripts]
 start = "livereload -p 8000"
+create-screen = "python create_screen.py"

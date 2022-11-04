@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Index - Adoolting</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="row">
+      <div class="col s6 offset-s6">
+        <form id="login" method="post" action="./home.html">
+          <div class="row">
+            <div class="input-field col">
+              <input id="email" name="email" type="text" class="validate" />
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                class="validate"
+              />
+              <label for="password">Password</label>
+            </div>
+            <div class="col">
+              <input type="submit" class="btn" value="Log in" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="row">
+      <div class="col s6">Intro content goes here</div>
+      <!-- Registration form -->
+      <div class="col s6">
+        <form id="register" method="post" action="./register.html">
+          <div class="row">
+            <div class="input-field col s6">
+              <input
+                id="firstname"
+                name="firstname"
+                type="text"
+                class="validate"
+              />
+              <label for="firstname">First name</label>
+            </div>
+            <div class="input-field col s6">
+              <input
+                id="lastname"
+                name="lastname"
+                type="text"
+                class="validate"
+              />
+              <label for="firstname">Last name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input
+                id="youremail"
+                name="youremail"
+                type="text"
+                class="validate"
+              />
+              <label for="firstname">Your email</label>
+            </div>
+            <div class="input-field col s6">
+              <input
+                id="confirmemail"
+                name="confirmemail"
+                type="text"
+                class="validate"
+              />
+              <label for="confirmemail">Confirm email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col">
+              <input
+                id="enterpassword"
+                name="enterpassword"
+                type="text"
+                class="validate"
+              />
+              <label for="enterpassword">Enter password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="gender" name="gender" type="text" class="validate" />
+              <label for="gender">Your gender</label>
+            </div>
+            <div class="input-field col s6">
+              <input
+                id="birthday"
+                name="birthday"
+                type="text"
+                class="validate"
+              />
+              <label for="birthday">Birthday</label>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Get started" class="btn" />
+          </div>
+          <div class="row">
+            <a href="#">Create page</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer / language -->
+    <div class="row">
+      <a href="#">English</a>
+      <a href="#">Español</a>
+      <a href="#">Français</a>
+      <a href="#">Deustch</a>
+    </div>
+  </body>
+</html>

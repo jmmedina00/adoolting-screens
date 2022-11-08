@@ -12,3 +12,5 @@ When done, follow the steps to run the desired script. For example, with `start`
 
 1. Change into the environment with `pipenv shell`
 2. Run the script with `pipenv run start`
+
+Notice: assets obtained from [Pexels](https://www.pexels.com/)

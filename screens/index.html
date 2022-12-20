@@ -20,10 +20,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
     ></script>
   </head>
-  <body>
+  <body class="bg-secondary h-100">
     <!-- Header -->
 
-    <div class="row bg-primary text-white">
+    <div class="row bg-primary text-white mb-4">
       <div class="col s6">Logo and info here</div>
       <div class="col s6 m-3">
         <form id="login" method="post" action="./home.html">
@@ -53,80 +53,87 @@
 
     <!-- Main -->
     <div class="row">
-      <div class="col s6">Intro content goes here</div>
+      <div class="col s6 bg-info">Intro content goes here</div>
       <!-- Registration form -->
-      <div class="col s6">
+      <div class="col s6 py-5 bg-white">
         <form id="register" method="post" action="./register.html">
-          <div class="row">
-            <div class="input-field col s6">
+          <div class="row px-5">
+            <div class="form-outline col s6">
               <input
                 id="firstname"
                 name="firstname"
                 type="text"
-                class="validate"
+                class="form-control"
               />
-              <label for="firstname">First name</label>
+              <label class="form-label" for="firstname">First name</label>
             </div>
-            <div class="input-field col s6">
+            <div class="form-outline col s6">
               <input
                 id="lastname"
                 name="lastname"
                 type="text"
-                class="validate"
+                class="form-control"
               />
-              <label for="firstname">Last name</label>
+              <label class="form-label" for="firstname">Last name</label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s6">
+          <div class="row px-5">
+            <div class="form-outline col s6">
               <input
                 id="youremail"
                 name="youremail"
                 type="text"
-                class="validate"
+                class="form-control"
               />
-              <label for="firstname">Your email</label>
+              <label class="form-label" for="firstname">Your email</label>
             </div>
-            <div class="input-field col s6">
+            <div class="form-outline col s6">
               <input
                 id="confirmemail"
                 name="confirmemail"
                 type="text"
-                class="validate"
+                class="form-control"
               />
-              <label for="confirmemail">Confirm email</label>
+              <label class="form-label" for="confirmemail">Confirm email</label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col">
+          <div class="row px-5">
+            <div class="form-outline col">
               <input
                 id="enterpassword"
                 name="enterpassword"
                 type="text"
-                class="validate"
+                class="form-control"
               />
-              <label for="enterpassword">Enter password</label>
+              <label class="form-label" for="enterpassword">
+                Enter password
+              </label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="gender" name="gender" type="text" class="validate" />
-              <label for="gender">Your gender</label>
+          <div class="row px-5">
+            <div class="form-outline col s6">
+              <input
+                id="gender"
+                name="gender"
+                type="text"
+                class="form-control"
+              />
+              <label class="form-label" for="gender">Your gender</label>
             </div>
-            <div class="input-field col s6">
+            <div class="form-outline col s6">
               <input
                 id="birthday"
                 name="birthday"
                 type="text"
-                class="validate"
+                class="form-control"
               />
-              <label for="birthday">Birthday</label>
+              <label class="form-label" for="birthday">Birthday</label>
             </div>
           </div>
-          <div class="row">
-            <input type="submit" value="Get started" class="btn" />
+          <div class="row mx-3 px-4 mt-2 mb-3">
+            <input type="submit" value="Get started" class="btn btn-primary" />
           </div>
-          <div class="row">
+          <div class="row mb-2 text-center">
             <a href="#">Create page</a>
           </div>
         </form>
@@ -134,11 +141,13 @@
     </div>
 
     <!-- Footer / language -->
-    <div class="row">
-      <a href="#">English</a>
-      <a href="#">Español</a>
-      <a href="#">Français</a>
-      <a href="#">Deustch</a>
+    <div class="navbar fixed-bottom navbar-expand-lg bg-warning text-uppercase">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">English</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Español</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Français</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Deustch</a></li>
+      </ul>
     </div>
   </body>
 </html>

@@ -1,11 +1,17 @@
 .pfp {
-    height: 48px;
-    width: 48px;
-    border-radius: 100%;
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
 }
 
 .pfp-64 {
-    height: 64px;
-    width: 64px;
-    border-radius: 100%;
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+}
+
+.picture-frame {
+  background-position: center;
+  background-size: cover;
+  padding-top: 60%;
 }

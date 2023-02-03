@@ -10,6 +10,12 @@
   border-radius: 100%;
 }
 
+.pfp-256 {
+  height: 256px;
+  width: 256px;
+  border-radius: 100%;
+}
+
 .picture-frame {
   background-position: center;
   background-size: cover;

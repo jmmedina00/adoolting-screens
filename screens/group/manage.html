@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manage group - Adoolting</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+      type="text/javascript"
+    ></script>
+    <link href="../style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-secondary h-100">
+    <div class="row bg-primary text-white g-0 py-3">
+      <div class="col-auto">
+        <img src="../assets/logo.svg" />
+      </div>
+      <div class="col-auto d-flex align-items-center">
+        <span class="material-icons fs-1 mx-1"> person </span>
+        <span class="material-icons fs-1 mx-1"> chat </span>
+      </div>
+      <div class="form-outline col">
+        <input class="form-control" id="search" name="search" type="text" />
+        <label class="form-label" for="search"> Search </label>
+      </div>
+      <div class="col-auto d-flex align-items-center">
+        <img class="pfp me-2" src="../assets/pfp/1.jpg" />
+        <span> Person Name </span>
+      </div>
+      <div class="col-auto d-flex align-items-center">
+        <span class="material-icons fs-1 mx-2"> more_vert </span>
+      </div>
+    </div>
+    <div class="row justify-content-around g-0">
+      <div class="col-5 p-3 bg-white">
+        <h4>Members</h4>
+        <div class="row mb-2">
+          <div class="col-auto">
+            <img class="pfp-64" src="../assets/pfp/1.jpg" />
+          </div>
+          <div class="col-auto ps-1 d-flex flex-grow-1 align-items-center">
+            <p class="fs-5 mb-0 fw-bold">Person Name</p>
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <button class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-auto">
+            <img class="pfp-64" src="../assets/pfp/2.jpg" />
+          </div>
+          <div class="col-auto ps-1 d-flex flex-grow-1 align-items-center">
+            <p class="fs-5 mb-0 fw-bold">Rachel Silke</p>
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <button class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-auto">
+            <img class="pfp-64" src="../assets/pfp/3.jpg" />
+          </div>
+          <div class="col-auto ps-1 d-flex flex-grow-1 align-items-center">
+            <p class="fs-5 mb-0 fw-bold">Verónica de la Rosa González</p>
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <button class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+        <p class="text-center">More members...</p>
+        <h4 class="mt-3">Manage requests</h4>
+        <div class="row mb-2">
+          <div class="col-auto">
+            <img class="pfp-64" src="../assets/pfp/3.jpg" />
+          </div>
+          <div class="col ps-1 d-flex flex-grow-1 align-items-center">
+            <p class="fs-5 mb-0 fw-bold">Verónica de la Rosa González</p>
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <span class="badge bg-secondary">Pending</span>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-auto">
+            <img class="pfp-64" src="../assets/pfp/4.jpg" />
+          </div>
+          <div class="col ps-1 d-flex flex-grow-1 align-items-center">
+            <p class="fs-5 mb-0 fw-bold">Dana Newton</p>
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <button type="button" class="btn btn-primary me-1">
+              <span class="material-icons"> thumb_up </span>
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+              <span class="material-icons"> thumb_down </span>
+            </button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-auto">
+            <img class="pfp-64" src="../assets/pfp/5.jpg" />
+          </div>
+          <div class="col ps-1 d-flex flex-grow-1 align-items-center">
+            <p class="fs-5 mb-0 fw-bold">Monika Truman</p>
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <button type="button" class="btn btn-primary me-1">
+              <span class="material-icons"> thumb_up </span>
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+              <span class="material-icons"> thumb_down </span>
+            </button>
+          </div>
+        </div>
+        <p class="text-center">More requests...</p>
+      </div>
+      <div class="col-5 p-3 bg-white">
+        <form
+          method="post"
+          class="h-100 d-flex flex-column"
+          action="./error.html"
+        >
+          <div class="row mb-2">
+            <div class="col-4 d-flex align-items-center">
+              <label for="name">Name</label>
+            </div>
+            <div class="col-8">
+              <input type="text" id="name" class="form-control" />
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4 d-flex align-items-top">
+              <label for="description">Description</label>
+            </div>
+            <div class="col-8">
+              <textarea id="description" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4 d-flex align-items-center">
+              <label for="accessLevel">Access level</label>
+            </div>
+            <div class="col-8">
+              <select id="accessLevel" class="form-select">
+                <option value="OPEN" selected>Open</option>
+                <option value="WATCH_ONLY">Watch only</option>
+                <option value="CLOSED">Closed</option>
+              </select>
+            </div>
+          </div>
+          <h5 class="my-3">Event settings</h5>
+          <div class="row mb-2">
+            <div class="col-4 d-flex align-items-center">
+              <label for="location">Location</label>
+            </div>
+            <div class="col-8">
+              <input type="text" id="location" class="form-control" />
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4 d-flex align-items-center">
+              <label for="createAs">Create as</label>
+            </div>
+            <div class="col-8">
+              <select id="createAs" class="form-select">
+                <option value="1" selected>Myself</option>
+                <option value="2">Company page</option>
+                <option value="3">Ke$ha fanpage</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4 d-flex align-items-center">
+              <label for="date">Date</label>
+            </div>
+            <div class="col-8">
+              <input type="date" id="date" class="form-control" />
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4 d-flex align-items-center">
+              <label for="time">Time</label>
+            </div>
+            <div class="col-8">
+              <input type="time" id="time" class="form-control" />
+            </div>
+          </div>
+          <button
+            class="btn btn-primary mt-auto w-100 justify-self-end"
+            type="submit"
+          >
+            Update
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  web:
+    image: httpd:2.4.56
+    ports:
+      - "8000:80"
+    volumes:
+      - "./screens:/usr/local/apache2/htdocs/"
+      - "./httpd.conf:/usr/local/apache2/conf/httpd.conf"

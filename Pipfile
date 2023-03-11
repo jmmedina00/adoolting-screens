@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-livereload = "*"
 beautifulsoup4 = "*"
 
 [dev-packages]
@@ -13,5 +12,5 @@ beautifulsoup4 = "*"
 python_version = "3.9"
 
 [scripts]
-start = "livereload -p 8000"
+start = "docker compose up"
 create-screen = "python create_screen.py"

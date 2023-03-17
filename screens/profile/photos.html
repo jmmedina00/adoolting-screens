@@ -24,22 +24,42 @@
   <body class="bg-secondary h-100">
     <div class="row bg-primary text-white g-0 py-3">
       <div class="col-auto">
-        <img src="../assets/logo.svg" />
+        <a href="../home.html"> <img src="../assets/logo.svg" /></a>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <span class="material-icons fs-1 mx-1">person</span>
+        <a href="../notification.html">
+          <span class="material-icons fs-1 mx-1 align-middle">person</span>
+        </a>
         <span class="material-icons fs-1 mx-1">chat</span>
       </div>
       <div class="form-outline col">
-        <input class="form-control" id="search" name="search" type="text" />
-        <label class="form-label" for="search">Search</label>
+        <form method="get" action="./search.html">
+          <input id="search" name="search" type="text" class="form-control" />
+          <label class="form-label" for="search">Search</label>
+        </form>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <img class="pfp me-2" src="../assets/pfp/1.jpg" />
-        <span>Person Name</span>
+        <a href="."> <img class="pfp me-2" src="../assets/pfp/1.jpg" /></a>
+        <a href=".">
+          <span>Person Name</span>
+        </a>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <span class="material-icons fs-1 mx-2">more_vert</span>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-icons fs-1 mx-2">more_vert</span>
+          </button>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="row g-0">
@@ -49,19 +69,19 @@
         </p>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <a class="d-flex text-black">
+            <a class="d-flex text-black" href="./">
               <span class="material-icons me-2">history</span>
               <span>Profile</span>
             </a>
           </li>
           <li class="list-group-item">
-            <a class="d-flex text-black">
+            <a class="d-flex text-black" href="./about.html">
               <span class="material-icons me-2">person</span>
               <span>About</span>
             </a>
           </li>
           <li class="list-group-item active">
-            <a class="d-flex text-primary">
+            <a class="d-flex text-primary" href="./photos.html">
               <span class="material-icons me-2">photo_library</span>
               <span>Photos</span>
             </a>
@@ -74,76 +94,100 @@
             <h5>Mitchell's photos</h5>
             <div class="row g-0">
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/7.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/7.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/8.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/8.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/9.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/9.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/A.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/A.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/B.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/B.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/C.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/C.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/D.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/D.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/E.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/E.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/F.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/F.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/1.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/1.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/2.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/2.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col-3">
-                <div
-                  class="w-100 h-100 position-relative picture-square"
-                  style="background-image: url('../assets/pictures/3.jpg')"
-                ></div>
+                <a href="../interaction/picture.html">
+                  <div
+                    class="w-100 h-100 position-relative picture-square"
+                    style="background-image: url('../assets/pictures/3.jpg')"
+                  ></div>
+                </a>
               </div>
             </div>
             <nav class="mt-4" aria-label="Page navigation example">

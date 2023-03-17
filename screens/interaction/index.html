@@ -24,22 +24,44 @@
   <body class="bg-secondary h-100">
     <div class="row bg-primary text-white g-0 py-3">
       <div class="col-auto">
-        <img src="../assets/logo.svg" />
+        <a href="../home.html"> <img src="../assets/logo.svg" /></a>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <span class="material-icons fs-1 mx-1"> person </span>
-        <span class="material-icons fs-1 mx-1"> chat </span>
+        <a href="../notification.html">
+          <span class="material-icons fs-1 mx-1 align-middle">person</span>
+        </a>
+        <span class="material-icons fs-1 mx-1">chat</span>
       </div>
       <div class="form-outline col">
-        <input class="form-control" id="search" name="search" type="text" />
-        <label class="form-label" for="search"> Search </label>
+        <form method="get" action="./search.html">
+          <input id="search" name="search" type="text" class="form-control" />
+          <label class="form-label" for="search">Search</label>
+        </form>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <img class="pfp me-2" src="../assets/pfp/1.jpg" />
-        <span> Person Name </span>
+        <a href="../profile/">
+          <img class="pfp me-2" src="../assets/pfp/1.jpg"
+        /></a>
+        <a href="../profile/">
+          <span>Person Name</span>
+        </a>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <span class="material-icons fs-1 mx-2"> more_vert </span>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-icons fs-1 mx-2">more_vert</span>
+          </button>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center g-0">
@@ -70,24 +92,32 @@
               class="position-absolute top-0 start-0 bottom-0 end-0 row mx-0"
             >
               <div class="col g-0 h-100">
-                <div
-                  class="h-50 w-100 position-relative picture-frame"
-                  style="background-image: url('../assets/pictures/2.jpg')"
-                ></div>
-                <div
-                  class="h-50 w-100 position-relative picture-frame"
-                  style="background-image: url('../assets/pictures/4.jpg')"
-                ></div>
+                <a href="./picture.html">
+                  <div
+                    class="h-50 w-100 position-relative picture-frame"
+                    style="background-image: url('../assets/pictures/2.jpg')"
+                  ></div>
+                </a>
+                <a href="./picture.html">
+                  <div
+                    class="h-50 w-100 position-relative picture-frame"
+                    style="background-image: url('../assets/pictures/4.jpg')"
+                  ></div>
+                </a>
               </div>
               <div class="col g-0 h-100">
-                <div
-                  class="h-50 w-100 position-relative picture-frame"
-                  style="background-image: url('../assets/pictures/3.jpg')"
-                ></div>
-                <div
-                  class="h-50 w-100 position-relative picture-frame"
-                  style="background-image: url('../assets/pictures/5.jpg')"
-                ></div>
+                <a href="./picture.html">
+                  <div
+                    class="h-50 w-100 position-relative picture-frame"
+                    style="background-image: url('../assets/pictures/3.jpg')"
+                  ></div>
+                </a>
+                <a href="./picture.html">
+                  <div
+                    class="h-50 w-100 position-relative picture-frame"
+                    style="background-image: url('../assets/pictures/5.jpg')"
+                  ></div>
+                </a>
               </div>
             </div>
           </div>

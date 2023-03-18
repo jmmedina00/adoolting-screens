@@ -6,7 +6,7 @@
   "scripts": {
     "create-screen": "pipenv run python create_screen.py",
     "cp-masonry": "cp ./node_modules/masonry-layout/dist/masonry.pkgd.min.js ./screens/scripts",
-    "cp-bootstrap": "cp ./node_modules/bootstrap/dist/js/bootstrap.min.js ./screens/scripts/",
+    "cp-bootstrap": "cp ./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js ./screens/scripts/",
     "cp-all": "npm run cp-masonry && npm run cp-bootstrap",
     "compile-styles": "sass --no-source-map ./style.scss ./screens/scripts/style.css",
     "build": "npm run cp-all && npm run compile-styles",

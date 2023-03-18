@@ -1,0 +1,29 @@
+{
+  "name": "adoolting-screens",
+  "version": "1.0.0",
+  "description": "Styles repackaging dependencies",
+  "main": "index.js",
+  "scripts": {
+    "create-screen": "pipenv run python create_screen.py",
+    "cp-bootstrap": "cp ./node_modules/bootstrap/dist/js/bootstrap.min.js ./screens/scripts/",
+    "compile-styles": "sass --no-source-map ./style.scss ./screens/scripts/style.css",
+    "build": "npm run cp-bootstrap && npm run compile-styles",
+    "build-dev": "npm run build && pipenv install",
+    "start": "docker compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmmedina00/adoolting-screens.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmmedina00/adoolting-screens/issues"
+  },
+  "homepage": "https://github.com/jmmedina00/adoolting-screens#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "masonry-layout": "^4.2.2",
+    "sass": "^1.59.3"
+  }
+}

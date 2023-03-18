@@ -10,7 +10,3 @@ beautifulsoup4 = "*"
 
 [requires]
 python_version = "3.9"
-
-[scripts]
-start = "docker compose up"
-create-screen = "python create_screen.py"

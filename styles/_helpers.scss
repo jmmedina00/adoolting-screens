@@ -1,0 +1,36 @@
+// Map declarations
+
+$pfp-sizes: (32, 48, 64, 256);
+$picture-ratios: (
+  frame: 60%,
+  square: 100%,
+);
+$md-sizes: (18, 24, 36, 48);
+
+// Class generators
+
+@each $size in $pfp-sizes {
+  $value: #{$size}px;
+
+  .pfp-#{$size} {
+    height: $value;
+    width: $value;
+    border-radius: 100%;
+  }
+}
+
+@each $name, $value in $picture-ratios {
+  .picture-#{$name} {
+    background-position: center;
+    background-size: cover;
+    padding-top: $value;
+  }
+}
+
+@each $size in $md-sizes {
+  $value: #{$size}px;
+
+  .material-icons.md-#{$value} {
+    font-size: $value;
+  }
+}

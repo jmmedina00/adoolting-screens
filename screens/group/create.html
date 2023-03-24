@@ -20,27 +20,53 @@
   <body class="bg-secondary h-100">
     <div class="row bg-primary text-white g-0 py-3">
       <div class="col-auto">
-        <img src="../assets/logo.svg" />
+        <a href="../home.html"> <img src="../assets/logo.svg" /></a>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <span class="material-icons fs-1 mx-1"> person </span>
-        <span class="material-icons fs-1 mx-1"> chat </span>
+        <a href="../notification.html">
+          <span class="material-icons fs-1 mx-1 align-middle">person</span>
+        </a>
+        <span class="material-icons fs-1 mx-1">chat</span>
       </div>
       <div class="form-outline col">
-        <input class="form-control" id="search" name="search" type="text" />
-        <label class="form-label" for="search"> Search </label>
+        <form method="get" action="./search.html">
+          <input id="search" name="search" type="text" class="form-control" />
+          <label class="form-label" for="search">Search</label>
+        </form>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <img class="pfp me-2" src="../assets/pfp/1.jpg" />
-        <span> Person Name </span>
+        <a href="../profile/">
+          <img class="pfp me-2" src="../assets/pfp/1.jpg"
+        /></a>
+        <a href="../profile/">
+          <span>Person Name</span>
+        </a>
       </div>
       <div class="col-auto d-flex align-items-center">
-        <span class="material-icons fs-1 mx-2"> more_vert </span>
+        <div class="dropdown">
+          <a href="#" role="button" data-bs-toggle="dropdown">
+            <span class="material-icons fs-1 mx-2">more_vert</span>
+          </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="../profile/edit.html"
+                >Edit profile</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="../settings.html">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="create.html">New group</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center g-0">
       <div class="col-6 p-3 bg-white">
-        <form method="post" action="./error.html">
+        <form method="post" action="./manage.html">
           <div class="row justify-content-center mb-2">
             <div class="col-3 d-flex align-items-center">
               <label for="name">Name</label>

@@ -19,8 +19,11 @@
   </head>
   <body class="bg-light h-100">
     <div class="row bg-primary text-white g-0 py-3">
-      <div class="col-auto">
-        <a href="../home.html"> <img src="../assets/logo.svg" /></a>
+      <div class="col-auto d-flex align-items-center">
+        <a href="../home.html" class="text-middle">
+          <span class="material-icons d-sm-none d-block">home</span>
+          <img class="d-sm-block d-none" src="../assets/logo-white.svg" />
+        </a>
       </div>
       <div class="col-auto d-flex align-items-center">
         <a href="../notification.html">
@@ -29,9 +32,15 @@
         <span class="material-icons fs-1 mx-1">chat</span>
       </div>
       <div class="form-outline col">
-        <form method="get" action="./search.html">
-          <input id="search" name="search" type="text" class="form-control" />
-          <label class="form-label" for="search">Search</label>
+        <form method="get" action="../search.html">
+          <input
+            id="search"
+            name="search"
+            type="text"
+            class="form-control text-white"
+            required
+          />
+          <label class="form-label text-white-50" for="search">Search</label>
         </form>
       </div>
       <div class="col-auto d-flex align-items-center">
@@ -67,19 +76,19 @@
         </p>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <a class="d-flex text-black" href="./">
+            <a class="d-flex" href="./">
               <span class="material-icons me-2">history</span>
               <span>Profile</span>
             </a>
           </li>
           <li class="list-group-item active">
-            <a class="d-flex text-primary" href="./about.html">
+            <a class="d-flex" href="./about.html">
               <span class="material-icons me-2">person</span>
               <span>About</span>
             </a>
           </li>
           <li class="list-group-item">
-            <a class="d-flex text-black" href="./photos.html">
+            <a class="d-flex" href="./photos.html">
               <span class="material-icons me-2">photo_library</span>
               <span>Photos</span>
             </a>

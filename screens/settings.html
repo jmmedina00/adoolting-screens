@@ -19,8 +19,11 @@
   </head>
   <body class="bg-dark h-100">
     <div class="row bg-primary text-white g-0 py-3">
-      <div class="col-auto">
-        <a href="home.html"> <img src="assets/logo.svg" /></a>
+      <div class="col-auto d-flex align-items-center">
+        <a href="home.html" class="text-middle">
+          <span class="material-icons d-sm-none d-block">home</span>
+          <img class="d-sm-block d-none" src="assets/logo-white.svg" />
+        </a>
       </div>
       <div class="col-auto d-flex align-items-center">
         <a href="notification.html">
@@ -28,10 +31,16 @@
         </a>
         <span class="material-icons fs-1 mx-1">chat</span>
       </div>
-      <div class="form-outline col">
+      <div class="form-outline col text-white">
         <form method="get" action="./search.html">
-          <input id="search" name="search" type="text" class="form-control" />
-          <label class="form-label" for="search">Search</label>
+          <input
+            id="search"
+            name="search"
+            type="text"
+            class="form-control text-white"
+            required
+          />
+          <label class="form-label text-white-50" for="search">Search</label>
         </form>
       </div>
       <div class="col-auto d-flex align-items-center">
@@ -59,7 +68,7 @@
       </div>
     </div>
     <div class="row justify-content-center g-0 h-100">
-      <div class="col-6 p-3 bg-white">
+      <div class="col-lg-6 col-md-9 p-3 bg-white">
         <form method="post" action="./error.html">
           <h2>Settings</h2>
           <h5 class="mt-3">Strangers</h5>

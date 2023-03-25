@@ -11,6 +11,16 @@ body {
   @extend .pfp-48;
 }
 
+.pfp-256 {
+  @include media-breakpoint-down(lg) {
+    @include square-size(128px);
+  }
+
+  @include media-breakpoint-down(sm) {
+    @include square-size(64px);
+  }
+}
+
 a,
 a:hover {
   color: inherit;

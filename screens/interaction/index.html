@@ -19,8 +19,11 @@
   </head>
   <body class="bg-light h-100">
     <div class="row bg-primary text-white g-0 py-3">
-      <div class="col-auto">
-        <a href="../home.html"> <img src="../assets/logo.svg" /></a>
+      <div class="col-auto d-flex align-items-center">
+        <a href="../home.html" class="text-middle">
+          <span class="material-icons d-sm-none d-block">home</span>
+          <img class="d-sm-block d-none" src="../assets/logo-white.svg" />
+        </a>
       </div>
       <div class="col-auto d-flex align-items-center">
         <a href="../notification.html">
@@ -29,9 +32,15 @@
         <span class="material-icons fs-1 mx-1">chat</span>
       </div>
       <div class="form-outline col">
-        <form method="get" action="./search.html">
-          <input id="search" name="search" type="text" class="form-control" />
-          <label class="form-label" for="search">Search</label>
+        <form method="get" action="../search.html">
+          <input
+            id="search"
+            name="search"
+            type="text"
+            class="form-control text-white"
+            required
+          />
+          <label class="form-label text-white-50" for="search">Search</label>
         </form>
       </div>
       <div class="col-auto d-flex align-items-center">
@@ -50,9 +59,9 @@
 
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="../profile/edit.html"
-                >Edit profile</a
-              >
+              <a class="dropdown-item" href="../profile/edit.html">
+                Edit profile
+              </a>
             </li>
             <li>
               <a class="dropdown-item" href="../settings.html">Settings</a>
@@ -65,7 +74,7 @@
       </div>
     </div>
     <div class="row justify-content-center g-0">
-      <div class="col-6">
+      <div class="col-lg-6 col-md-9">
         <div class="card mt-2">
           <div class="card-body p-3">
             <div class="row mb-2">

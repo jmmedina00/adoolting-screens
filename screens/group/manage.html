@@ -19,8 +19,11 @@
   </head>
   <body class="bg-dark h-100">
     <div class="row bg-primary text-white g-0 py-3">
-      <div class="col-auto">
-        <a href="../home.html"> <img src="../assets/logo.svg" /></a>
+      <div class="col-auto d-flex align-items-center">
+        <a href="../home.html" class="text-middle">
+          <span class="material-icons d-sm-none d-block">home</span>
+          <img class="d-sm-block d-none" src="../assets/logo-white.svg" />
+        </a>
       </div>
       <div class="col-auto d-flex align-items-center">
         <a href="../notification.html">
@@ -29,9 +32,15 @@
         <span class="material-icons fs-1 mx-1">chat</span>
       </div>
       <div class="form-outline col">
-        <form method="get" action="./search.html">
-          <input id="search" name="search" type="text" class="form-control" />
-          <label class="form-label" for="search">Search</label>
+        <form method="get" action="../search.html">
+          <input
+            id="search"
+            name="search"
+            type="text"
+            class="form-control text-white"
+            required
+          />
+          <label class="form-label text-white-50" for="search">Search</label>
         </form>
       </div>
       <div class="col-auto d-flex align-items-center">
@@ -50,9 +59,9 @@
 
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="../profile/edit.html"
-                >Edit profile</a
-              >
+              <a class="dropdown-item" href="../profile/edit.html">
+                Edit profile
+              </a>
             </li>
             <li>
               <a class="dropdown-item" href="../settings.html">Settings</a>
@@ -65,7 +74,7 @@
       </div>
     </div>
     <div class="row justify-content-around g-0">
-      <div class="col-5 p-3 bg-white">
+      <div class="col-lg-5 col-md-9 p-3 bg-white order-2 order-lg-1">
         <h4>Members</h4>
         <div class="row mb-2">
           <div class="col-auto">
@@ -147,7 +156,9 @@
         </div>
         <p class="text-center">More requests...</p>
       </div>
-      <div class="col-5 p-3 bg-white">
+      <div
+        class="col-lg-5 col-md-9 p-3 bg-white order-1 order-lg-2 mb-3 mb-lg-0"
+      >
         <form
           method="post"
           class="h-100 d-flex flex-column"

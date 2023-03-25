@@ -9,12 +9,16 @@ $md-sizes: (18, 24, 36, 48);
 
 // Class generators
 
+@mixin square-size($size) {
+  height: $size;
+  width: $size;
+}
+
 @each $size in $pfp-sizes {
   $value: #{$size}px;
 
   .pfp-#{$size} {
-    height: $value;
-    width: $value;
+    @include square-size($value);
     border-radius: 100%;
   }
 }

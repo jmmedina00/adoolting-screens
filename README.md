@@ -1,17 +1,55 @@
 # Adoolting user interface development
 
+[![](./icons/bootstrap.png)](https://getbootstrap.com/)
+[![](./icons/sass.png)](https://sass-lang.com/)
+[![](./icons/docker-icon.png)](https://www.docker.com/)
+[![](./icons/python.png)](https://www.docker.com/)
+
 This repository contains the source files for Adoolting's user interface. No actual functionality is to be implemented here.
 
-This repository's scripts require pipenv and Docker Compose to work properly. Please follow these instructions:
+Check application code in [adoolting](https://github.com/jmmedina00/adoolting)
 
-1. Ensure [docker-compose is installed.](https://docs.docker.com/compose/install/)
-2. Ensure [pip is installed.](https://pip.pypa.io/en/stable/installation/)
-3. Install pipenv with `pip install pipenv`
-4. Install dependencies with `pipenv install`
+**Notice:** sample assets obtained from [Pexels](https://www.pexels.com/) and [Freepik](http://www.freepik.com)
 
-When done, follow the steps to run the desired script. For example, with `start`:
+## Prerequisites
 
-1. Change into the environment with `pipenv shell`
-2. Run the script with `pipenv run start`
+NodeJS: https://nodejs.org/en
 
-Notice: assets obtained from [Pexels](https://www.pexels.com/)
+Install Docker Compose: https://docs.docker.com/compose/install/
+
+Python 3 and pipenv (development only): https://pip.pypa.io/en/stable/installation/
+
+## Building styles
+
+Install Node dependencies:
+
+```
+npm install
+```
+
+Run build:
+
+```
+npm run build
+```
+
+## Creating new screen from template
+
+Install Python dependencies:
+
+```
+pip install pipenv
+pipenv install
+```
+
+Run new screen script:
+
+```
+npm run create-screen <screen-name>
+```
+
+## Running test server
+
+```
+npm start
+```

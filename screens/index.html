@@ -21,12 +21,15 @@
     <!-- Header -->
 
     <div class="row g-0 bg-primary text-white mb-4">
-      <div class="col s6">Logo and info here</div>
-      <div class="col s6 m-3">
+      <div class="col-6 px-4 d-flex flex-column justify-content-center">
+        <img style="max-width: 15em" src="assets/logo-white.svg" />
+        <span>Lorem ipsum dolor sit amet</span>
+      </div>
+      <div class="col-6 my-3">
         <form id="login" method="post" action="./home.html">
-          <div class="bg-white d-flex flex-column p-3">
-            <div class="d-flex">
-              <div class="form-outline">
+          <div class="bg-white d-flex flex-column p-3 me-4">
+            <div class="d-flex flex-md-row flex-column">
+              <div class="form-outline mb-md-0 mb-2">
                 <input
                   id="email"
                   name="email"
@@ -61,89 +64,121 @@
     </div>
 
     <!-- Main -->
-    <div class="row mx-3">
-      <div class="col s6 me-2 bg-info">Intro content goes here</div>
+    <div class="row px-3 g-0">
+      <div class="col-sm-6 d-none d-sm-block">
+        <div class="bg-info h-100 me-sm-2 d-flex flex-column">
+          <img
+            class="px-4 my-2 flex-shrink-1 flex-grow-0"
+            style="max-height: 375px"
+            src="assets/faces.svg"
+          />
+          <a href="http://www.freepik.com" class="text-white text-center">
+            Designed by Alvaro_Cabrera / Freepik
+          </a>
+        </div>
+      </div>
       <!-- Registration form -->
-      <div class="col s6 ms-2 py-5 bg-white">
-        <form id="register" method="post" action="./landing/success.html">
-          <div class="row px-5 mb-3">
-            <div class="form-outline col s6">
-              <input
-                id="firstname"
-                name="firstname"
-                type="text"
-                class="form-control"
-                required
-              />
-              <label class="form-label" for="firstname">First name</label>
+      <div class="col-sm-6">
+        <form
+          class="py-5 ms-sm-2 bg-white"
+          id="register"
+          method="post"
+          action="./landing/success.html"
+        >
+          <div class="row px-4 g-1 mb-3">
+            <div class="col-sm-6 mb-3">
+              <div class="form-outline">
+                <input
+                  id="firstname"
+                  name="firstname"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <label class="form-label" for="firstname">First name</label>
+              </div>
             </div>
-            <div class="form-outline col s6">
-              <input
-                id="lastname"
-                name="lastname"
-                type="text"
-                class="form-control"
-                required
-              />
-              <label class="form-label" for="firstname">Last name</label>
+
+            <div class="col-md-6 mb-3">
+              <div class="form-outline">
+                <input
+                  id="lastname"
+                  name="lastname"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <label class="form-label" for="firstname">Last name</label>
+              </div>
             </div>
-          </div>
-          <div class="row px-5 mb-3">
-            <div class="form-outline col s6">
-              <input
-                id="youremail"
-                name="youremail"
-                type="text"
-                class="form-control"
-                required
-              />
-              <label class="form-label" for="firstname">Your email</label>
+
+            <div class="col-md-6 mb-3">
+              <div class="form-outline">
+                <input
+                  id="youremail"
+                  name="youremail"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <label class="form-label" for="firstname">Your email</label>
+              </div>
             </div>
-            <div class="form-outline col s6">
-              <input
-                id="confirmemail"
-                name="confirmemail"
-                type="text"
-                class="form-control"
-                required
-              />
-              <label class="form-label" for="confirmemail">Confirm email</label>
+
+            <div class="col-md-6 mb-3">
+              <div class="form-outline">
+                <input
+                  id="confirmemail"
+                  name="confirmemail"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <label class="form-label" for="confirmemail"
+                  >Confirm email</label
+                >
+              </div>
             </div>
-          </div>
-          <div class="row px-5 mb-3">
-            <div class="form-outline col">
-              <input
-                id="enterpassword"
-                name="enterpassword"
-                type="text"
-                class="form-control"
-                required
-              />
-              <label class="form-label" for="enterpassword">
-                Enter password
-              </label>
+
+            <div class="col-md-12 mb-3">
+              <div class="form-outline">
+                <input
+                  id="enterpassword"
+                  name="enterpassword"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <label class="form-label" for="enterpassword">
+                  Enter password
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="row px-5 mb-3">
-            <div class="form-outline col s6">
-              <input
-                id="gender"
-                name="gender"
-                type="text"
-                class="form-control"
-                required
-              />
-              <label class="form-label" for="gender">Your gender</label>
+
+            <div class="col-md-6 mb-3">
+              <div class="form-outline">
+                <input
+                  id="gender"
+                  name="gender"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <label class="form-label" for="gender">Your gender</label>
+              </div>
             </div>
-            <div class="form-outline col s6">
-              <input
-                id="birthday"
-                name="birthday"
-                type="text"
-                class="form-control"
-                required
-              />
-              <label class="form-label" for="birthday">Birthday</label>
+
+            <div class="col-md-6 mb-3">
+              <div class="form-outline">
+                <input
+                  id="birthday"
+                  name="birthday"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <label class="form-label" for="birthday">Birthday</label>
+              </div>
             </div>
           </div>
           <div class="row mx-3 px-4 mt-2 mb-3">
@@ -157,7 +192,7 @@
     </div>
 
     <!-- Footer / language -->
-    <div class="navbar fixed-bottom navbar-expand-lg bg-warning text-uppercase">
+    <div class="navbar fixed-bottom navbar-expand bg-warning text-uppercase">
       <ul class="navbar-nav">
         <li class="nav-item"><a href="#" class="nav-link">English</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Español</a></li>

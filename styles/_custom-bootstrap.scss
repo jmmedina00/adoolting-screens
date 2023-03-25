@@ -1,0 +1,22 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+$primary: #6200ee;
+$secondary: #01a299;
+$light: #f2e7fe;
+$dark: #23036a;
+
+@import "../node_modules/bootstrap/scss/variables";
+
+$list-group-border-color: none;
+$list-group-color: rgba(0, 0, 0, 0.5);
+$list-group-active-color: $primary;
+$list-group-active-bg: $light;
+$list-group-active-border-width: none;
+
+$custom-colors: (
+  "confirm": $blue,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

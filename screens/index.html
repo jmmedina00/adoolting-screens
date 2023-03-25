@@ -17,7 +17,7 @@
       src="scripts/bootstrap.bundle.min.js"
     ></script>
   </head>
-  <body class="bg-secondary h-100">
+  <body class="bg-dark h-100">
     <!-- Header -->
 
     <div class="row g-0 bg-primary text-white mb-4">
@@ -32,6 +32,7 @@
                   name="email"
                   type="text"
                   class="form-control"
+                  required
                 />
                 <label class="form-label" for="email">Email</label>
               </div>
@@ -41,6 +42,7 @@
                   name="password"
                   type="password"
                   class="form-control"
+                  required
                 />
                 <label for="password" class="form-label">Password</label>
               </div>
@@ -50,9 +52,9 @@
                 value="Log in"
               />
             </div>
-            <a href="landing/email-password.html" class="mt-2"
-              >Forgot password?</a
-            >
+            <a href="landing/email-password.html" class="mt-2 text-primary">
+              Forgot password?
+            </a>
           </div>
         </form>
       </div>
@@ -64,7 +66,7 @@
       <!-- Registration form -->
       <div class="col s6 ms-2 py-5 bg-white">
         <form id="register" method="post" action="./landing/success.html">
-          <div class="row px-5">
+          <div class="row px-5 mb-3">
             <div class="form-outline col s6">
               <input
                 id="firstname"
@@ -81,17 +83,19 @@
                 name="lastname"
                 type="text"
                 class="form-control"
+                required
               />
               <label class="form-label" for="firstname">Last name</label>
             </div>
           </div>
-          <div class="row px-5">
+          <div class="row px-5 mb-3">
             <div class="form-outline col s6">
               <input
                 id="youremail"
                 name="youremail"
                 type="text"
                 class="form-control"
+                required
               />
               <label class="form-label" for="firstname">Your email</label>
             </div>
@@ -101,30 +105,33 @@
                 name="confirmemail"
                 type="text"
                 class="form-control"
+                required
               />
               <label class="form-label" for="confirmemail">Confirm email</label>
             </div>
           </div>
-          <div class="row px-5">
+          <div class="row px-5 mb-3">
             <div class="form-outline col">
               <input
                 id="enterpassword"
                 name="enterpassword"
                 type="text"
                 class="form-control"
+                required
               />
               <label class="form-label" for="enterpassword">
                 Enter password
               </label>
             </div>
           </div>
-          <div class="row px-5">
+          <div class="row px-5 mb-3">
             <div class="form-outline col s6">
               <input
                 id="gender"
                 name="gender"
                 type="text"
                 class="form-control"
+                required
               />
               <label class="form-label" for="gender">Your gender</label>
             </div>
@@ -134,6 +141,7 @@
                 name="birthday"
                 type="text"
                 class="form-control"
+                required
               />
               <label class="form-label" for="birthday">Birthday</label>
             </div>

@@ -1,9 +1,5 @@
-$primary: #6200ee;
-
-// Some variables must be defined before imports so that they have their effect
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "mdb-helpers";
+@import "custom-bootstrap";
+@import "mdb-imports";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -18,4 +14,17 @@ body {
 a,
 a:hover {
   color: inherit;
+  text-decoration: none;
+}
+
+.toast-body {
+  background-color: white;
+}
+
+.form-outline .form-control {
+  border-bottom: 1px solid $gray-200;
+}
+
+.list-group-item {
+  font-weight: bold;
 }

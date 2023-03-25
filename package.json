@@ -24,8 +24,6 @@
   },
   "homepage": "https://github.com/jmmedina00/adoolting-screens#readme",
   "dependencies": {
-    "@material/button": "^14.0.0",
-    "@material/web": "^1.0.0-pre.4",
     "bootstrap": "^5.2.3",
     "masonry-layout": "^4.2.2",
     "mdb-ui-kit": "^6.2.0",

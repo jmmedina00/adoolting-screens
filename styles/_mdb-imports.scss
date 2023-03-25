@@ -1,0 +1,41 @@
+// Core imports from MDB
+
+@import "../node_modules/mdb-ui-kit/src/scss/free/functions";
+
+@import "../node_modules/mdb-ui-kit/src/scss/custom/variables";
+@import "../node_modules/mdb-ui-kit/src/scss/free/variables";
+
+@import "../node_modules/mdb-ui-kit/src/scss/free/mixins";
+@import "../node_modules/mdb-ui-kit/src/scss/free/utilities";
+
+// MDB components
+
+@import "../node_modules/mdb-ui-kit/src/scss/free/buttons";
+
+.btn {
+  font-weight: 500;
+  --bs-btn-padding-x: 1.375rem;
+  box-sizing: border-box;
+}
+
+[class*="btn-outline-"] {
+  border: 2px solid $gray-200;
+
+  &:hover {
+    color: var(--bs-btn-color);
+    background-color: transparent !important;
+  }
+}
+
+@import "../node_modules/mdb-ui-kit/src/scss/free/forms/form-control";
+@import "../node_modules/mdb-ui-kit/src/scss/free/forms/form-check";
+@import "../node_modules/mdb-ui-kit/src/scss/free/forms/form-select";
+
+.form-control {
+  // This requires all form fields to have "required"
+  &:valid {
+    @extend .active;
+  }
+
+  // TODO patch the hell out of this
+}
